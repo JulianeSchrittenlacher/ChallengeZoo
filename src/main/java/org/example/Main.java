@@ -5,11 +5,15 @@ public class Main {
         Owner owner1 = new Owner("Klara", 12, "Warder Weg 13");
         Owner owner2 = new Owner("Felix", 20, "Kluge Straße 1");
 
-       Animal dog1 = new Animal("1","Bello", "dog",12, owner1);
-       Animal dog2 = new Animal("2","Hasso", "dog",2, owner1);
-       Animal cat1 = new Animal("3","Mauz", "cat",3, owner1);
-       Animal cow1 = new Animal("4","Emma", "cow",25, owner2);
-       Animal cow2 = new Animal("4","Emma", "cow",25, owner2);
+        Species dog = new Species("dog",500);
+        Species cat = new Species("cat",500);
+        Species cow = new Species("cow",5000);
+
+       Animal dog1 = new Animal("1","Bello", "dog",12, owner1, dog);
+       Animal dog2 = new Animal("2","Hasso", "dog",2, owner1, dog);
+       Animal cat1 = new Animal("3","Mauz", "cat",3, owner1, cat);
+       Animal cow1 = new Animal("4","Emma", "cow",25, owner2, cow);
+       Animal cow2 = new Animal("4","Emma", "cow",25, owner2, cow);
 
 
         System.out.println("---------------------------------");
